@@ -1,11 +1,9 @@
-let algos = require("../groupArrays.js");
+let algos = require("../cutAndPaste.js");
 
-test("groups the arrays into an array of arrays of given length, any remainding go in last array", () => {
-    
-    expect(algos.groupArrays(["a", "b", "c", "d"], 4)).toMatchObject([ [ 'a', 'b', 'c', 'd' ] ])
-    expect(algos.groupArrays(["a", "b", "c", "d"], 3)).toMatchObject([ [ 'a', 'b', 'c' ], [ 'd' ] ])
-    expect(algos.groupArrays(["a", "b", "c", "d"], 2)).toMatchObject([ [ 'a', 'b' ], [ 'c', 'd' ] ])
-    
-  })
-
+// CUT AND PASTE 
+// remove the first n elements and place them onto the end of the array
+test("slash the array starting at index 0", () => {
+  expect(algos.cutAndPaste([1, 2, 5, "help", "wow", 3], 1)).toMatchObject([2, 5, "help", "wow", 3, 1])
+  expect(algos.cutAndPaste([1, 2, 5, "help", "wow", 3], 4)).toMatchObject(["wow", 3, 1, 2, 5, "help"])
+})
   
