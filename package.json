@@ -1,8 +1,8 @@
 {
-  "name": "groupArrays",
+  "name": "cutAndPaste",
   "version": "1.0.0",
   "description": "",
-  "main": "groupArrays.js",
+  "main": "cutAndPaste.js",
   "scripts": {
     "test": "jest"
   },
