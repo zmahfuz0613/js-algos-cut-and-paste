@@ -11,7 +11,9 @@
 - The output should be a new array.
 
 > i.e.:
+>
 > input => `([1, 2, 5, "help", "wow", 3], 4)`
+>
 > output => `(["wow", 3, 1, 2, 5, "help"])`
 
 ### Getting Started
